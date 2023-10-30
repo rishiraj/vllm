@@ -46,6 +46,7 @@ class HfRunner:
             model_name,
             torch_dtype=torch_dtype,
             trust_remote_code=True,
+            load_in_4bit=True,
         ).cuda()
         if tokenizer_name is None:
             tokenizer_name = model_name
